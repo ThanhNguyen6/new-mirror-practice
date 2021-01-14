@@ -1,5 +1,6 @@
-***REMOVED*** ***REMOVED***:
-    """ The square spiral (rows = columns)
+def spiral(size):
+    """ 
+        The square spiral (rows = columns)
         The spiral should start on the top left most cell 
         each edge should be one unit shorter as the spiral winds around and finally ends
         Example: spiral 5
@@ -9,55 +10,44 @@
             [    * * *]
             [         ]
     """
-    def __init__(self, size):
-        """ ***REMOVED***ial a spiral of grid size * size
-        """
-        self.columns = size
-        self.rows = size
-        self.grid = []
-        self.sym = '* '
-        for _ in range(self.rows):
-            col = []
-            for x in range(self.columns + 2):
-                if x == 0:
-                    col.append('[')
-                elif x == self.columns + 1:
-                    col.append(']')
-                else:
-                    col.append('  ')
-            self.grid.append(col)
-        self.start_position = (0, 1)
+    #***REMOVED***ial a spiral of grid size * size
+    columns = size
+    rows = size
+    grid = []
+    sym = '* '
+    for _ in range(rows):
+        col = []
+        for x in range(columns + 2):
+            if x == 0:
+                col.append('[')
+            elif x == columns + 1:
+                col.append(']')
+            else:
+                col.append('  ')
+        grid.append(col)
+    start_position = (0, 1)
         
+    # Change value of the grid to create the spiral
+    # The spiral should start on the top left most cell 
 
-    def create(self):
-        """ Change value of the grid to create the spiral
-            The spiral should start on the top left most cell 
-        """
-        #for y in range(self.rows):
-        #    for x in range(1, self.columns + 1, 1):
-        current_position = self.start_position
-        steps = number_steps(self.columns)
+    current_position = start_position
+    steps = number_steps(columns)
 
-        self.grid[get_y(current_position)][get_x(current_position)] = self.sym
-        steps -= 1
-        current_dir = "right"
-        side = self.columns - 1
-        while steps > 0:
-            for _ in range(side):
-                current_position = change_position(current_dir, current_position)
-                self.grid[get_y(current_position)][get_x(current_position)] = self.sym
-            steps -= side
-            side -= 1
-            current_dir = change_direction(current_dir)
+    grid[get_y(current_position)][get_x(current_position)] = sym
+    steps -= 1
+    current_dir = "right"
+    side = columns - 1
+    while steps > 0:
+        for _ in range(side):
+            current_position = change_position(current_dir, current_position)
+            grid[get_y(current_position)][get_x(current_position)] = sym
+        steps -= side
+        side -= 1
+        current_dir = change_direction(current_dir)
     
-    def print_spiral(self):
-        """ Printing spiral to console
-        """
-        for y in range(0, self.rows):
-            for x in range(0, self.columns + 2):
-                print(self.grid[y][x], end="")
-            print('\n', end="")
-
+    # print out a spiral of user input's size
+    print_spiral(grid, size)
+    
 ###########################
 # Helpers Functions
 ###########################
@@ -136,11 +126,17 @@ def input_validation(user_input):
     except ValueError:
         return False
 
+def print_spiral(grid, size):
+        """ Printing spiral to console
+        """
+        for y in range(0, size):
+            for x in range(0, size + 2):
+                print(grid[y][x], end="")
+            print('\n', end="")
+
 if __name__ == '__main__':
     user_input = input("Please enter a positive number size for spiral: ")
     while input_validation(user_input) is not True:
         user_input = input("Please enter a positive number size for spiral: ")
     size = int(user_input)
-    x = ***REMOVED***(size)
-    x.create()
-    x.print_spiral()
+    spiral(size)
