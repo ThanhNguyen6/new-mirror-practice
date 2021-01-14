@@ -10,10 +10,11 @@ https://realpython.com/installing-python/</p>
 <p> Here is the link for git repotory: 
 https://github.com/ThanhNguyen6/Qudio/</p>
 
-<h2 id="task"> Intructions</h2>
+<h2> Intructions</h2>
 <p> After have python3 and download the code, please follow the steps to run/compile the code</p>
 
 <ol>
-	<li>Enter the following command into the command line: python3 main.py</li>
+	<li> Cd into the project folder which you see main.py</li>
+	<li> Enter the following command into the command line: python3 main.py</li>
 	<li> Enter any positive number then hit 'enter'</li>
 </ol>
