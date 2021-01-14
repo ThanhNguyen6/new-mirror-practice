@@ -4,11 +4,11 @@
 <h2> Requirements</h2> 
 <b> Please make sure that you have python3 to run/compile the code</b>
 <p> Here is the instruction to setup python3:
-[link to Instructions!](https://realpython.com/installing-python/)</p>
+https://realpython.com/installing-python/</p>
 
 <b> Please download the code or you can git clone</b>
 <p> Here is the link for git repotory: 
-[link !](https://github.com/ThanhNguyen6/Qudio/)</p>
+https://github.com/ThanhNguyen6/Qudio/</p>
 
 <h2 id="task"> Intructions</h2>
 <p> After have python3 and download the code, please follow the steps to run/compile the code</p>
