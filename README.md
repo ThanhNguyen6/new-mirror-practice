@@ -14,7 +14,7 @@ https://github.com/ThanhNguyen6/Qudio/</p>
 <p> After have python3 and download the code, please follow the steps to run/compile the code</p>
 
 <ol>
-	<li> Cd into the project folder which you see main.py</li>
+	<li>***REMOVED***</li>
 	<li> Enter the following command into the command line: python3 main.py</li>
 	<li> Enter any positive number then hit 'enter'</li>
 </ol>
