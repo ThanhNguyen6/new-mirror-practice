@@ -6,7 +6,7 @@
 <p> Here is the instruction to setup python3:
 https://realpython.com/installing-python/</p>
 
-<b>***REMOVED***</b>
+<b>normal</b>
 <p> Here is the link for git repotory: 
 https://github.com/ThanhNguyen6/Qudio/</p>
 
@@ -14,7 +14,7 @@ https://github.com/ThanhNguyen6/Qudio/</p>
 <p> After have python3 and download the code, please follow the steps to run/compile the code</p>
 
 <ol>
-	<li>***REMOVED***</li>
+	<li>normal</li>
 	<li> Enter the following command into the command line: python3 main.py</li>
 	<li> Enter any positive number then hit 'enter'</li>
 </ol>

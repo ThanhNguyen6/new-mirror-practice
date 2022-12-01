@@ -10,7 +10,7 @@ def spiral(size):
             [    * * *]
             [         ]
     """
-    #***REMOVED***ial a spiral of grid size * size
+    #Initial a spiral of grid size * size
     columns = size
     rows = size
     grid = []
