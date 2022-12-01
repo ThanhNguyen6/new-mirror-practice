@@ -6,7 +6,7 @@
 <p> Here is the instruction to setup python3:
 https://realpython.com/installing-python/</p>
 
-<b> Please download the code or you can git clone</b>
+<b>***REMOVED***</b>
 <p> Here is the link for git repotory: 
 https://github.com/ThanhNguyen6/Qudio/</p>
 
